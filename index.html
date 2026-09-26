@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Found This Bag?</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0b0b;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 520px;
+      padding: 30px 24px 40px;
+      text-align: center;
+    }
+
+    .bag-icon {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto 24px;
+      display: block;
+    }
+
+    h1 {
+      margin: 0 0 28px;
+      font-size: 3rem;
+      line-height: 1;
+      font-weight: 900;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    h1 .orange {
+      color: #ff8c00;
+    }
+
+    .message {
+      font-size: 2rem;
+      line-height: 1.25;
+      margin: 0 0 36px;
+      color: #f4f4f4;
+    }
+
+    .subtext {
+      font-size: 1.8rem;
+      margin: 0 0 20px;
+      color: #f4f4f4;
+    }
+
+    .phone-number {
+      font-size: 4rem;
+      font-weight: 900;
+      color: #ff8c00;
+      margin: 0 0 38px;
+      line-height: 1.05;
+      word-break: break-word;
+    }
+
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      width: 100%;
+      max-width: 440px;
+      margin: 0 auto 20px;
+      padding: 24px 20px;
+      border-radius: 28px;
+      text-decoration: none;
+      font-size: 2rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      transition: transform 0.15s ease, opacity 0.15s ease;
+    }
+
+    .button:hover,
+    .button:active {
+      transform: scale(0.99);
+      opacity: 0.95;
+    }
+
+    .call-btn {
+      background: #ff8c00;
+      color: #ffffff;
+    }
+
+    .text-btn {
+      background: transparent;
+      color: #ffffff;
+      border: 4px solid #ff8c00;
+    }
+
+    .icon {
+      font-size: 2.2rem;
+      line-height: 1;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 24px 18px 34px;
+      }
+
+      .bag-icon {
+        width: 130px;
+        height: 130px;
+      }
+
+      h1 {
+        font-size: 2.4rem;
+      }
+
+      .message {
+        font-size: 1.55rem;
+      }
+
+      .subtext {
+        font-size: 1.45rem;
+      }
+
+      .phone-number {
+        font-size: 2.9rem;
+      }
+
+      .button {
+        font-size: 1.55rem;
+        padding: 20px 16px;
+      }
+
+      .icon {
+        font-size: 1.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Simple bag / EMS icon -->
+    <svg class="bag-icon" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <rect x="35" y="50" width="130" height="120" rx="22" stroke="white" stroke-width="8"/>
+      <path d="M60 58C60 36 76 22 100 22C124 22 140 36 140 58" stroke="white" stroke-width="8" stroke-linecap="round"/>
+      <path d="M52 65L36 88" stroke="white" stroke-width="8" stroke-linecap="round"/>
+      <path d="M148 65L164 88" stroke="white" stroke-width="8" stroke-linecap="round"/>
+      <rect x="66" y="85" width="68" height="52" rx="12" stroke="white" stroke-width="6"/>
+      <path d="M100 86L108 101H125L111 112L116 128L100 118L84 128L89 112L75 101H92L100 86Z" fill="#ff8c00"/>
+      <rect x="96" y="94" width="8" height="26" fill="white"/>
+      <rect x="87" y="103" width="26" height="8" fill="white"/>
+      <rect x="72" y="142" width="56" height="6" rx="3" fill="white"/>
+      <circle cx="74" cy="148" r="5" fill="#ff8c00"/>
+    </svg>
+
+    <h1>FOUND THIS BAG<span class="orange">?</span></h1>
+
+    <p class="message">
+      This bag belongs to an<br />
+      EMS employee.
+    </p>
+
+    <p class="subtext">Please call or text:</p>
+
+    <div class="phone-number">859-242-1637</div>
+
+    <a class="button call-btn" href="tel:8592421637">
+      <span class="icon">📞</span>
+      <span>Call Now</span>
+    </a>
+
+    <a class="button text-btn" href="sms:8592421637">
+      <span class="icon">💬</span>
+      <span>Text Now</span>
+    </a>
+
+  </div>
+</body>
+</html>
